@@ -1,0 +1,127 @@
+/* Color variables */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+.main-hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5% 35%;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 1em;
+}
+
+.main-hero-container img {
+  border-radius: 10px 10px 0 0;
+}
+.main-hero-container p {
+  color: #7280a7;
+  margin: 1em 3.5em 1.5em;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.6rem;
+}
+
+.order-summary-container {
+  display: flex;
+  padding: 1.25em 1em;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 2.75em;
+  background-color: #f5f7ff;
+  border-radius: 0.5em;
+}
+.order-summary-container a {
+  margin-left: 3em;
+  font-weight: 900;
+  color: #3829e0;
+  transition: 0.2s text-decoration ease-in;
+}
+.order-summary-container a:hover {
+  text-decoration: none;
+  transition: 0.2s text-decoration ease-in;
+}
+
+.order-info p {
+  margin: 0 auto;
+  color: #7280a7;
+}
+.order-info h2 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 2.75em;
+}
+
+.submit-form button {
+  font-weight: 700;
+  font-size: 0.9em;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+.submit-form button.payment {
+  background-color: #3829e0;
+  padding: 1em 0;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 0.8em 15px #7280a7;
+  transition: background-color 0.2s ease-in-out;
+}
+.submit-form button.payment:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #7c72e9;
+}
+.submit-form button.cancel {
+  color: #7280a7;
+  transition: color 0.2s ease-in-out;
+}
+.submit-form button.cancel:hover {
+  transition: color 0.2s ease-in-out;
+  color: black;
+}
+
+.main-hero-title {
+  margin-top: 7%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .main-hero-container {
+    margin: 25% 0 10% 2em;
+    width: 85%;
+  }
+
+  .order-summary-container h2 {
+    font-size: 0.9em;
+  }
+  .order-summary-container img {
+    margin-right: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
